@@ -1,142 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configuração de caracteres especiais e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioWiki</title>
 
-    <style>
-        img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-        }
-    </style>
+    <title>BioWiki | Enciclopédia Digital</title>
+
+    <!-- Framework Bootstrap para auxiliar na estilização e layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Arquivo CSS personalizado do projeto -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>BioWiki</h1>
+    <!-- Barra de navegação fixa no topo -->
+    <header class="navbar navbar-expand-lg sticky-top custom-navbar">
+        <div class="container">
 
-    <nav>
-    <a href="#">Início</a> |
-    <a href="#">Categorias</a> |
-    <a href="#">Curiosidades</a> |
-    <a href="#">Sobre</a>
-</nav>
+            <!-- Logo do site -->
+            <a class="navbar-brand logo-text" href="index.html">
+                Bio<span class="logo-accent">Wiki</span>
+            </a>
 
-    <h2>
-        Bem-vindo à <b>BioWiki</b>, uma enciclopédia digital dedicada ao mundo animal.
-    </h2>
+            <!-- Menu de navegação -->
+            <div class="navbar-nav ms-auto gap-3">
+                <!-- ms-auto joga o menu para a direita -->
+                <!-- gap-3 cria espaçamento entre os links -->
 
-    <section>
-        <h3>Categorias de Animais</h3>
+                <a class="nav-link active-custom" href="index.html">Início</a>
+                <a class="nav-link" href="categorias.html">Categorias</a>
+                <a class="nav-link" href="#curiosidades">Curiosidade</a>
+                <a class="nav-link" href="#sobre">Sobre</a>
+            </div>
 
-        <article>
-            <h4>Mamíferos</h4>
+        </div>
+    </header>
 
-            <ul>
-                <li>
-                    Leão <br>
-                    <img src="src/leaoimg.webp" alt="Imagem de Leão">
+    <!-- Conteúdo principal da página -->
+    <main class="container my-5">
+
+        <!-- Seção principal de curiosidade -->
+        <section id="curiosidades" class="mb-5">
+
+            <!-- Card utilizando classes do Bootstrap -->
+            <div class="p-5 bg-white rounded shadow-sm border-top-brown">
+
+                <span class="badge-curiosity d-block mb-2">
+                    VOCÊ SABIA?
+                </span>
+
+                <h2 class="text-success-custom mb-3">
+                    O polvo possui três corações.
+                </h2>
+
+                <!-- fs-5 aumenta o tamanho da fonte -->
+                <p class="fs-5 text-dark">
+                    Dois corações bombeiam sangue para as guelras e o terceiro para o resto do corpo. Além disso, ele é um dos invertebrados mais inteligentes do mundo.
+                </p>
+
+                <!-- Área de destaque abaixo da curiosidade -->
+                <div class="pt-3 border-top mt-4 text-brown-custom fw-semibold">
+                    Proteja a vida selvagem e inspire novas gerações
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lista com outras curiosidades -->
+        <section class="p-4 rounded custom-bg-light">
+
+            <h3 class="text-success-custom mb-3">
+                Outras Curiosidades
+            </h3>
+
+            <!-- Lista estilizada com Bootstrap -->
+            <ul class="list-group list-group-flush bg-transparent">
+
+                <li class="list-group-item bg-transparent border-0 ps-0 fs-5">
+                    • A girafa pode medir até 6 metros de altura.
                 </li>
 
-                <li>
-                    Tigre <br>
-                    <img src="src/Tigreimg.webp" alt="Imagem de Tigre">
+                <li class="list-group-item bg-transparent border-0 ps-0 fs-5">
+                    • Os golfinhos utilizam sons para se comunicar.
                 </li>
 
-                <li>
-                    Baleia <br>
-                    <img src="src/Baleia.webp" alt="Imagem de Baleia">
+                <li class="list-group-item bg-transparent border-0 ps-0 fs-5">
+                    • O tigre possui listras únicas, como impressões digitais.
                 </li>
+
+                <li class="list-group-item bg-transparent border-0 ps-0 fs-5">
+                    • As corujas conseguem girar a cabeça em até 270 graus.
+                </li>
+
             </ul>
-        </article>
 
-        <article>
-            <h4>Aves</h4>
+        </section>
 
-            <ul>
-                <li>
-                    Águia <br>
-                    <img src="src/Água.webp" alt="Imagem de Águia">
-                </li>
+    </main>
 
-                <li>
-                    Arara <br>
-                    <img src="src/Arara.webp" alt="Imagem de Arara">
-                </li>
+    <!-- Rodapé do site -->
+    <footer id="sobre" class="footer-custom text-white pt-5 pb-4 mt-5">
 
-                <li>
-                    Coruja <br>
-                    <img src="src/Coruja.webp" alt="Imagem de Coruja">
-                </li>
-            </ul>
-        </article>
+        <div class="container text-center text-md-start">
 
-        <article>
-            <h4>Répteis</h4>
+            <!-- Sistema de grid do Bootstrap -->
+            <div class="row">
 
-            <ul>
-                <li>
-                    Cobra <br>
-                    <img src="src/Cobra.webp" alt="Imagem de Cobra">
-                </li>
+                <!-- Coluna com informações da BioWiki -->
+                <div class="col-md-8 mb-4">
 
-                <li>
-                    Jacaré <br>
-                    <img src="src/Jacaré.webp" alt="Imagem de Jacaré">
-                </li>
+                    <h3 class="mb-3">BioWiki</h3>
 
-                <li>
-                    Camaleão <br>
-                    <img src="src/Jacaré.webp" alt="Imagem de Camaleão">
-                </li>
-            </ul>
-        </article>
+                    <p class="text-muted-custom">
+                        BioWiki, uma enciclopédia digital dedicada ao mundo animal.
+                    </p>
 
-        <article>
-            <h4>Vida Pré-Histórica</h4>
+                    <p class="mb-1 text-muted-custom">
+                        Email: gabiten7@gmail.com
+                    </p>
 
-            <ul>
-                <li>
-                    Espinossauro <br>
-                    <img src="src/Espinossauro.webp" alt="Imagem de Espinossauro">
-                </li>
+                    <p class="text-muted-custom">
+                        Phone: +55 (61) 9 9913-0708
+                    </p>
 
-                <li>
-                    Tricerátops <br>
-                    <img src="src/Triceratops.avif" alt="Imagem de Tricerátops">
-                </li>
+                </div>
 
-                <li>
-                    Estegossauro <br>
-                    <img src="src/Estegossauro.jpg" alt="Imagem de Estegossauro">
-                </li>
-            </ul>
-        </article>
+                <!-- Coluna com informações do projeto -->
+                <div class="col-md-4 text-md-end text-muted-custom">
 
-    </section>
+                    <p class="mb-1 fw-bold text-white">
+                        Desenvolvido por Gabriela Oliveira Bittencourt
+                    </p>
 
-    <section>
-    <h3>Curiosidades</h3>
+                    <p class="mb-0">
+                        Projeto de Desenvolvimento de Interfaces
+                    </p>
 
-    <ul>
-        <li>O polvo possui três corações.</li>
-        <li>A girafa pode medir até 6 metros de altura.</li>
-        <li>Os golfinhos utilizam sons para se comunicar.</li>
-        <li>O tigre possui listras únicas, como impressões digitais.</li>
-        <li>As corujas conseguem girar a cabeça em até 270 graus.</li>
-    </ul>
-    </section>
+                    <p class="mt-3 mb-0 small">
+                        2026 BioWiki. Todos os direitos reservados.
+                    </p>
 
-    <footer>
-    
-    <p>Desenvolvido por Gabriela Oliveira Bittencourt</p>
-    <p>Projeto de Desenvolvimento de Interfaces</p>
-    <p>2026</p>
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
-
-
 
 </body>
 </html>

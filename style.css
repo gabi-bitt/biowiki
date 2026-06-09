@@ -1,0 +1,127 @@
+
+:root {
+    --primary-green: #2d5a27;       /* Verde da barra de navegação e títulos */
+    --accent-brown: #8c6239;        /* Marrom para detalhes e bordas */
+    --light-bg: #fdfbf7;            /* Fundo limpo off-white (cor da página) */
+    --white: #ffffff;
+}
+
+/* Aplica a cor de fundo off-white em todo o corpo do site */
+body {
+    background-color: var(--light-bg);
+}
+
+/* Customização da Navbar (Muda o fundo para o nosso Verde oficial) */
+.custom-navbar {
+    /* O '!important' força o Bootstrap a aceitar a nossa cor em vez da cor padrão dele */
+    background-color: var(--primary-green) !important;
+}
+
+/* Define o tamanho, o peso (negrito) e a cor branca para o nome "Bio" na logo */
+.logo-text {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--white) !important;
+}
+
+/* Muda a cor apenas da palavra "Wiki" na logo para um marrom/dourado claro */
+.logo-accent {
+    color: #c5a880; 
+}
+
+/* Modifica as cores dos links do menu quando eles estão normais (branco com transparência) */
+.custom-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 600;
+}
+
+/* Aplica o efeito visual quando passamos o mouse por cima do link (:hover) ou quando a página está selecionada (.active-custom) */
+.custom-navbar .nav-link:hover, .active-custom {
+    color: var(--white) !important;
+    border-bottom: 2px solid var(--accent-brown); /* Cria a barrinha marrom embaixo do link */
+}
+
+/* --- Estilo da Seção de Curiosidades --- */
+
+/* Adiciona aquela borda grossa marrom de 6 pixels no topo do card principal */
+.border-top-brown {
+    border-top: 6px solid var(--accent-brown) !important;
+}
+
+/* Estiliza o texto pequeno "VOCÊ SABIA?", deixando marrom, em negrito e com as letras mais afastadas */
+.badge-curiosity {
+    color: var(--accent-brown);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 0.9rem;
+}
+
+/* Classe utilitária para pintar textos importantes com o nosso Verde oficial */
+.text-success-custom {
+    color: var(--primary-green) !important;
+}
+
+/* Classe utilitária para pintar textos importantes com o nosso Marrom oficial */
+.text-brown-custom {
+    color: var(--accent-brown) !important;
+}
+
+/* Muda o fundo da caixa de 'Outras Curiosidades' para aquele cinza/bege bem clarinho */
+.custom-bg-light {
+    background-color: #f5f1e9 !important;
+}
+
+/* --- Imagens dos Cards de Animais --- */
+.custom-card-img {
+    height: 180px;         /* Trava a altura de todas as fotos dos animais para ficarem iguais */
+    object-fit: cover;     /* Corta e encaixa as fotos de forma inteligente sem distorcer ou esticar */
+}
+
+/* --- Customização das Abas (Página de Categorias) --- */
+
+/* Estilo padrão dos botões das categorias (Mamíferos, Aves, etc.) */
+.custom-tabs .nav-link {
+    color: #546e7a;
+    font-weight: 600;
+    border: none;          /* Remove as bordinhas de caixa que o Bootstrap coloca por padrão */
+}
+
+/* Estilo de quando uma categoria está clicada/ativa (.active) */
+.custom-tabs .nav-link.active {
+    color: var(--primary-green) !important;
+    background: none;
+    border-bottom: 3px solid var(--accent-brown); /* Coloca a linha marrom indicando a aba ativa */
+}
+
+/* --- Card Interativo do Espinossauro --- */
+.custom-card-clickable {
+    cursor: pointer;       /* Faz o ponteiro do mouse virar a "mãozinha" de clique */
+    border: 1px dashed var(--accent-brown) !important; /* Deixa a bordinha do card tracejada em marrom */
+    transition: transform 0.2s ease; /* Faz o efeito de movimento durar 0.2 segundos de forma suave */
+}
+
+/* Quando o usuário passa o mouse em cima do card do Espinossauro, o card sobe 4 pixels (efeito flutuante) */
+.custom-card-clickable:hover {
+    transform: translateY(-4px);
+}
+
+/* Classe para pintar fundos de elementos com o Marrom oficial */
+.bg-brown {
+    background-color: var(--accent-brown) !important;
+}
+
+/* Classe para colocar bordas com o nosso Verde oficial */
+.border-success-custom {
+    border-color: var(--primary-green) !important;
+}
+
+/* --- Estilo Customizado do Rodapé --- */
+.footer-custom {
+    background-color: #212824 !important; /* Fundo grafite/escuro esverdeado */
+    border-top: 5px solid var(--accent-brown); /* Linha grossa marrom que separa o site do rodapé */
+}
+
+/* Deixa os textos secundários do rodapé com uma cor cinza clara agradável para leitura */
+.text-muted-custom {
+    color: #94a3b8 !important;
+}

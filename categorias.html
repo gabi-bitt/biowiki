@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias | BioWiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg sticky-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand logo-text" href="index.html">Bio<span class="logo-accent">Wiki</span></a>
+            <div class="navbar-nav ms-auto gap-3">
+                <a class="nav-link" href="index.html">Início</a>
+                <a class="nav-link active-custom" href="categorias.html">Categorias</a>
+                <a class="nav-link" href="index.html#curiosidades">Curiosidade</a>
+                <a class="nav-link" href="#sobre">Sobre</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-success-custom">Categorias de Animais</h2>
+        <p class="text-muted mb-4">Selecione uma das categorias abaixo para listar os exemplos:</p>
+
+        <ul class="nav nav-tabs custom-tabs mb-4" id="categoryTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="mamiferos-tab" data-bs-toggle="tab" data-bs-target="#mamiferos" type="button" role="tab">Mamíferos</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="aves-tab" data-bs-toggle="tab" data-bs-target="#aves" type="button" role="tab">Aves</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="repteis-tab" data-bs-toggle="tab" data-bs-target="#repteis" type="button" role="tab">Répteis</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="prehistorica-tab" data-bs-toggle="tab" data-bs-target="#prehistorica" type="button" role="tab">Vida Pré-Histórica</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="categoryTabsContent">
+            
+            <div class="tab-pane fade show active" id="mamiferos" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/leaoimg.webp" class="card-img-top custom-card-img" alt="Leão">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Leão</h5></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Tigreimg.webp" class="card-img-top custom-card-img" alt="Tigre">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Tigre</h5></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Baleia.webp" class="card-img-top custom-card-img" alt="Baleia">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Baleia</h5></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="aves" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Água.webp" class="card-img-top custom-card-img" alt="Águia">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Águia</h5></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Arara.webp" class="card-img-top custom-card-img" alt="Arara">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Arara</h5></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Coruja.webp" class="card-img-top custom-card-img" alt="Coruja">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Coruja</h5></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="repteis" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Cobra.webp" class="card-img-top custom-card-img" alt="Cobra">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Cobra</h5></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Jacaré.webp" class="card-img-top custom-card-img" alt="Jacaré">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Jacaré</h5></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Jacaré.webp" class="card-img-top custom-card-img" alt="Camaleão">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Camaleão</h5></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="prehistorica" role="tabpanel">
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0 custom-card-clickable" onclick="mostrarEspinossauro()">
+                            <img src="src/Espinossauro.webp" class="card-img-top custom-card-img" alt="Espinossauro">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-success-custom">Espinossauro</h5>
+                                <small class="text-brown-custom fw-bold">Clique para ler o artigo</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Triceratops.avif" class="card-img-top custom-card-img" alt="Tricerátops">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Tricerátops</h5></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="src/Estegossauro.jpg" class="card-img-top custom-card-img" alt="Estegossauro">
+                            <div class="card-body text-center"><h5 class="card-title m-0">Estegossauro</h5></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="espinossauro-detalhe" class="p-4 bg-white rounded border shadow-sm d-none">
+                    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
+                        <h2 class="text-success-custom m-0">Espinossauro</h2>
+                        <span class="badge bg-brown text-white px-3 py-2 fs-6">Reino: Animalia</span>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p class="text-justify">O Espinossauro foi um dos maiores dinossauros carnívoros já descobertos. Viveu há cerca de 95 milhões de anos e possuía uma grande vela nas costas formada por espinhos alongados.</p>
+                            <p class="text-justify">Há indícios de que os Espinossauros alimentavam-se de peixes. Esse animal possuía as tradicionais características dos outros predadores, a não ser os dentes, que eram retos e não curvados e os braços um pouco maiores.</p>
+                            <p class="text-justify">O Espinossauro era na verdade um pescador, como indicado por suas maxilares alongadas, dentes cônicos e narinas levantadas. A evidência mais direta para sua dieta vem de uma espécie relacionada, o <em>Baryonyx</em>, que foi encontrado com os ossos de peixes e de um jovem <em>Iguanodon</em> em seu estômago.</p>
+                            <div class="p-3 my-3 bg-light border-start border-4 border-success-custom fst-italic">
+                                Em 2004 a revista Nature anunciou a descoberta de um dente de Espinossauro embebido numa vértebra de pterossauro, o que sugere a existência de uma relação predador-presa.
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="p-3 rounded custom-bg-light border">
+                                <h4 class="h6 text-brown-custom border-bottom pb-2 mb-3 fw-bold">Classificação científica</h4>
+                                <table class="table table-sm table-borderless m-0 bg-transparent">
+                                    <tr><td><strong>Filo:</strong></td><td>Chordata</td></tr>
+                                    <tr><td><strong>Classe:</strong></td><td>Reptilia</td></tr>
+                                    <tr><td><strong>Clado:</strong></td><td>Dinosauria</td></tr>
+                                    <tr><td><strong>Clado:</strong></td><td>Saurischia</td></tr>
+                                    <tr><td><strong>Clado:</strong></td><td>Theropoda</td></tr>
+                                    <tr><td><strong>Família:</strong></td><td>Spinosauridae</td></tr>
+                                    <tr><td><strong>Tribo:</strong></td><td>Spinosaurini</td></tr>
+                                    <tr><td><strong>Gênero:</strong></td><td>Spinosaurus</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="sobre" class="footer-custom text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-8 mb-4">
+                    <h3>BioWiki</h3>
+                    <p class="text-muted-custom">BioWiki, uma enciclopédia digital dedicada ao mundo animal.</p>
+                    <p class="mb-1 text-muted-custom">Email: gabiten7@gmail.com</p>
+                    <p class="text-muted-custom">Phone: +55 (61) 9 9913-0708</p>
+                </div>
+                <div class="col-md-4 text-md-end text-muted-custom">
+                    <p class="mb-1 fw-bold text-white">Desenvolvido por Gabriela Oliveira Bittencourt</p>
+                    <p class="mb-0">Projeto de Desenvolvimento de Interfaces</p>
+                    <p class="mt-3 mb-0 small">2026 BioWiki. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
